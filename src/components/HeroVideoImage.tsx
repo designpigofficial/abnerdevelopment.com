@@ -43,18 +43,14 @@ export default function HeroVideoImage() {
                 zIndex: -1,
               }}
             >
-              Write once,
+              Welcome to,
             </Text>
             <br />
-            <Text as={"span"} color={"red.400"}>
-              use everywhere!
+            <Text as={"span"} color={"pink.300"}>
+              Abner Development
             </Text>
           </Heading>
-          <Text color={"gray.500"}>
-            Snippy is a rich coding snippets app that lets you create your own
-            code snippets, categorize them, and even sync them in the cloud so
-            you can use them anywhere. All that is free!
-          </Text>
+          <Text color={"gray.500"}>Design | Develop | Market</Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
@@ -64,9 +60,9 @@ export default function HeroVideoImage() {
               size={"lg"}
               fontWeight={"normal"}
               px={6}
-              colorScheme={"red"}
-              bg={"red.400"}
-              _hover={{ bg: "red.500" }}
+              colorScheme={"pink"}
+              bg={"pink.300"}
+              _hover={{ bg: "pink.500" }}
             >
               Get started
             </Button>
@@ -95,7 +91,7 @@ export default function HeroVideoImage() {
             top={"-20%"}
             left={0}
             zIndex={-1}
-            color={useColorModeValue("red.50", "red.400")}
+            color={useColorModeValue("pink.50", "pink.300")}
           />
           <Box
             position={"relative"}
@@ -123,9 +119,7 @@ export default function HeroVideoImage() {
               align={"center"}
               w={"100%"}
               h={"100%"}
-              src={
-                "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
-              }
+              src={"../public/portrait-he"}
             />
           </Box>
         </Flex>

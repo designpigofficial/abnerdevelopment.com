@@ -6,6 +6,7 @@ import {
   Stack,
   Text,
   useBreakpointValue,
+  useColorModeValue,
 } from "@chakra-ui/react";
 
 export default function HeroSplitScreen() {
@@ -24,43 +25,42 @@ export default function HeroSplitScreen() {
                 position: "absolute",
                 bottom: 1,
                 left: 0,
-                bg: "blue.400",
+                bg: "pink.400",
                 zIndex: -1,
               }}
             >
-              Freelance
+              Hello, I'm
             </Text>
             <br />{" "}
-            <Text color={"blue.400"} as={"span"}>
-              Design Projects
+            <Text color={"pink.400"} as={"span"}>
+              Brandon
             </Text>{" "}
           </Heading>
           <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
-            The project board is an exclusive resource for contract work. It's
-            perfect for freelancers, agencies, and moonlighters.
+            I build web apps to help grow your buisness and make you more money.
           </Text>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
             <Button
               rounded={"full"}
-              bg={"blue.400"}
+              bg={"pink.400"}
               color={"white"}
               _hover={{
-                bg: "blue.500",
+                bg: "pink.500",
               }}
             >
-              Create Project
+              Start Project
             </Button>
-            <Button rounded={"full"}>How It Works</Button>
+            <Button rounded={"full"}>Learn More</Button>
           </Stack>
         </Stack>
       </Flex>
-      <Flex flex={1}>
+      <Flex flex={1} justifyContent={"center"} alignItems={"center"}>
         <Image
           alt={"Login Image"}
-          objectFit={"cover"}
-          src={
-            "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-          }
+          textAlign={"center"}
+          w={499}
+          h={554}
+          src={"./portrait-hero.jpg"}
         />
       </Flex>
     </Stack>

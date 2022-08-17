@@ -31,10 +31,11 @@ interface LinkItemProps {
 }
 const LinkItems: Array<LinkItemProps> = [
   { name: "Home", icon: FiHome },
-  { name: "Trending", icon: FiTrendingUp },
-  { name: "Explore", icon: FiCompass },
-  { name: "Favourites", icon: FiStar },
-  { name: "Settings", icon: FiSettings },
+  { name: "About", icon: FiTrendingUp },
+  { name: "Services", icon: FiCompass },
+  { name: "Tech Stack", icon: FiStar },
+  { name: "Projects", icon: FiSettings },
+  { name: "Contact", icon: FiSettings },
 ];
 
 export default function Sidebar({ children }: { children: ReactNode }) {
@@ -84,7 +85,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
     >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
         <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
-          Logo
+          AbnerDev
         </Text>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
@@ -111,22 +112,23 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
       <Flex
         align="center"
         p="4"
-        mx="4"
-        borderRadius="lg"
+        mx="2"
+        borderRadius="md"
         role="group"
         cursor="pointer"
         _hover={{
-          bg: "cyan.400",
-          color: "white",
+          bg: "pink.200",
+          color: "black",
+          fontWeight: "bold",
         }}
         {...rest}
       >
         {icon && (
           <Icon
-            mr="4"
+            mr="3"
             fontSize="16"
             _groupHover={{
-              color: "white",
+              color: "black",
             }}
             as={icon}
           />
@@ -154,14 +156,14 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
       {...rest}
     >
       <IconButton
-        variant="outline"
+        variant="ghost"
         onClick={onOpen}
         aria-label="open menu"
         icon={<FiMenu />}
       />
 
       <Text fontSize="2xl" ml="8" fontFamily="monospace" fontWeight="bold">
-        Logo
+        AbnerDev
       </Text>
     </Flex>
   );
