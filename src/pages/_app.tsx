@@ -6,6 +6,8 @@ import { extendTheme } from "@chakra-ui/react";
 
 import Layout from "../components/Layout";
 
+// import '../styles/styles.css'
+
 const theme = extendTheme({
   config: {
     cssVarPrefix: "ck",
