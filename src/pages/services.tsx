@@ -1,11 +1,11 @@
 import { Flex } from "@chakra-ui/react";
 
-const Index = () => (
+const Services = () => (
   <>
     <Flex align={"center"} justify={"center"} w={"100%"} h={"100vh"}>
-      Hero
+      Services
     </Flex>
   </>
 );
 
-export default Index;
+export default Services;
