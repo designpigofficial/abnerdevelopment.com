@@ -11,8 +11,8 @@ const Index = () => (
       mt="200px"
     >
       <Heading pt="100px">
-        I recently decided to go in another direction... just one final word
-        her...
+        I recently decided to go in another direction... just one final word for
+        HER...
       </Heading>
       <Spacer />
       <Text pb="200px" mt="100px">
