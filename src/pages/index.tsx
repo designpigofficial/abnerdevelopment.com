@@ -1,7 +1,11 @@
 import { Flex, Heading, Spacer, Text } from "@chakra-ui/react";
+import { DarkModeSwitch } from "../components/DarkModeSwitch";
 
 const Index = () => (
   <>
+    <Flex>
+      <DarkModeSwitch />
+    </Flex>
     <Flex align={"center"} justify={"center"} flexDirection="column" mt="200px">
       <Heading pt="100px">
         I recently decided to go in another direction... just one final word for
