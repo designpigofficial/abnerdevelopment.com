@@ -6,13 +6,13 @@ const Index = () => (
     <Flex>
       <DarkModeSwitch />
     </Flex>
-    <Flex align={"center"} justify={"center"} flexDirection="column" mt="200px">
-      <Heading pt="100px">
+    <Flex align={"center"} justify={"center"} flexDirection="column" mt="100px">
+      <Heading>
         I recently decided to go in another direction... just one final word for
         HER...
       </Heading>
       <Spacer />
-      <Text pb="200px" mt="100px">
+      <Text pb="100px" mt="100px">
         So impressed with all you do
         <br />
         Tried so hard to be like you
