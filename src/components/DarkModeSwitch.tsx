@@ -29,27 +29,6 @@ export const DarkModeSwitch = () => {
             </Button>
           </NextLink>
 
-          <NextLink href="/about" passHref>
-            <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
-              About
-            </Button>
-          </NextLink>
-
-          <NextLink href="/services" passHref>
-            <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
-              Services
-            </Button>
-          </NextLink>
-          <NextLink href="/tech" passHref>
-            <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
-              Tech Stack
-            </Button>
-          </NextLink>
-          <NextLink href="/projects" passHref>
-            <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
-              Projects
-            </Button>
-          </NextLink>
           <NextLink href="/contactPage" passHref>
             <Button
               as="a"
